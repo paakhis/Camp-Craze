@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Poppins:wght@400;500;700&display=swap");
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #3486c9;
+    background-color: #c4d9ee;
+  
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 100px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.content-container {
+    padding: 20px;
+    max-width: 800px;
+}
+
+.content-container h2 {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #222;
+}
+
+.content-container p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+address {
+    font-style: normal;
+    margin-top: 20px;
+}
+
+address p {
+    margin: 5px 0;
+}
+
+address a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+address a:hover {
+    text-decoration: underline;
+}
+
+.nav {
+    width: 100%;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    height: 3.5rem;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    background-color: #001032;; 
+    z-index: 100; 
+    color: #3486c9;
+  }
+
+  a {
+    text-decoration: none;
+    color: #3486c9;;
+  }
+
+  a {
+    text-decoration: none;
+  }
+  a:hover {
+    color: orangered; 
+    transition: color 0.3s ease; 
+  }
+

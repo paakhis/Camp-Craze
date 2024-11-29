@@ -1,0 +1,352 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Poppins:wght@400;500;700&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins" , sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: #c4d9ee;
+  color: 	#1d262f
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #3486c9;;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  max-width: 1120px;
+  margin-inline: 1.5rem;
+}
+
+.main {
+  overflow: hidden; /* For animation */
+}
+
+/*=============== HEADER & NAV ===============*/
+
+.header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color:#c4d9ee;
+  z-index: 100;
+}
+
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Poppins:wght@400;500;700&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins" , sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: #c4d9ee;
+  color: 	#1d262f
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: orangered; /* Example color on hover */
+  transition: color 0.3s ease; /* Smooth transition effect */
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  max-width: 1120px;
+  margin-inline: 1.5rem;
+}
+
+.main {
+  overflow: hidden; /* For animation */
+}
+
+/*=============== HEADER & NAV ===============*/
+
+
+.nav {
+  width: 100%;
+  position: fixed; /* Keep nav fixed at top */
+  top: 0;
+  left: 0;
+  height: 3.5rem;
+  display: flex;
+  justify-content: space-around; /* Center and space links */
+  align-items: center;
+  background-color: #001032;; /* Optional: Background color for nav */
+  z-index: 100; /* Ensure nav is above other content */
+  color: #3486c9;
+}
+
+
+.image-container {
+  position: relative; /* Enable absolute positioning for child elements */
+  height: 100vh; /* Set height to full viewport height */
+  width: 100%; /* Set width to full viewport width */
+  overflow: hidden; /* Prevent scrolling */
+}
+
+.image-container img {
+  position: absolute; /* Overlap images */
+  top: 50%; /* Center images vertically */
+  left: 50%; /* Center images horizontally */
+  transform: translate(-50%, -50%); /* Shift back by half of their size */
+  width: 100%; /* Set width to 100% of container */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Cover the container while maintaining aspect ratio */
+}
+
+.img-4 {
+  height: 2%;
+  z-index: 1; /* Lowest z-index for img-3.svg */
+}
+
+.img-3 {
+  z-index: 2; /* Lowest z-index for img-3.svg */
+}
+
+.img-2 {
+  z-index: 3; /* Middle z-index for img-2.svg */
+}
+
+.img-1 {
+  z-index: 4; /* Highest z-index for img-1.svg */
+  height: 100%;
+}
+
+/* Text Container Styles */
+.text-container {
+  position: absolute; /* Position text over images */
+  top: 20%; /* Adjust to center vertically */
+  left: 10%; /* Adjust to center horizontally */
+  
+  z-index: 4; /* Ensure text appears above all images */
+  
+  color: white; /* Make the text stand out */
+}
+
+.text{
+  color : #1d262f;
+  font-size: 60px;
+  font-weight : 500;
+  
+}
+
+.text0{
+  margin-bottom: 20px;
+  font-size: 20px;
+  color : #3486c9;
+}
+
+
+
+
+
+
+button {
+  padding: 15px 25px;
+  border: unset;
+  border-radius: 15px;
+  color:  #1d262f;
+  z-index: 1;
+  background-color: #c4d9ee; 
+  position: relative;
+  font-weight: 1000;
+  font-size: 17px;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  transition: all 250ms;
+  overflow: hidden;
+  margin-top: 40px;
+ }
+ 
+ button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 15px;
+  background-color: #212121;
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  transition: all 250ms
+ }
+ 
+ button:hover {
+  color: #c4d9ee;
+ }
+ 
+ button:hover::before {
+  width: 100%;
+ }
+
+
+
+
+
+
+
+.bird1{
+  position: absolute; /* Position text over images */
+  top: 65%; /* Adjust to center vertically */
+  left: 5%; /* Adjust to center horizontally */
+  
+  z-index: 4; /* Ensure text appears above all images */
+}
+
+.bird2{
+  position: absolute; /* Position text over images */
+  top: 15%; /* Adjust to center vertically */
+  left: 40%; /* Adjust to center horizontally */
+  
+  z-index: 4; /* Ensure text appears above all images */
+}
+/*.nav_logo{S
+  width : 36px; 
+}
+
+.nav_toggle,.nav_close{
+  display: inline-flex;
+  font-size: 1.25rem;
+  color : #18334e;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1023px)
+{
+  .nav_menu{
+    position: fixed;
+    top: -100%;
+    left: 0;
+    background-color: #18334e;
+    width: 100%;
+    box-shadow: 0 1px 16px hsla(210,55%,24%,.1);
+    padding-block: 3.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
+    transition: top .4s;
+
+  }
+}
+.nav_list{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  row-gap: 2rem;
+}
+
+.nav_link{
+  color : #18334e;
+  transition: color .3s;
+}
+
+.nav_link:hover{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: .75rem;
+}
+
+.nav_button{
+  background-color: hsla(0,0%,100%,.3);
+  padding: 1rem 2.5rem;
+  border: 2px solid #18334e;
+  border-radius: .75rem;
+}
+
+.nav_close{
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+
+}
+/* Navigation for mobile devices */
+
+
+/* Show menu */
+.show-menu{
+  top: 0;
+}
+
+
+.nav_button_link {
+  background-color: hsla(0,0%,100%,.3);
+  padding: 1rem 2.5rem;
+  border: 2px solid #18334e;
+  border-radius: .75rem;
+  color: #18334e;
+  transition: color 0.3s;
+}
+
+.nav_button_link:hover {
+  color: #fff;
+  background-color: #18334e;
+}
+
+/* Change background header */
+
+
+/*=============== HOME ===============*/
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+
+
+/* For taller devices */
+
+
+/* For medium devices */
+
+
+/* For large devices */
+
+
+/* For 2K resolutions (2048 x 1152) */

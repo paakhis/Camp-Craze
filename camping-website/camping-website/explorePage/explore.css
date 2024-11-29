@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Poppins:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Poppins:wght@400;500;700&display=swap");
+
+
+.main
+{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  object-fit: cover;
+}
+
+
+
+
+
+.nav {
+  width: 100%;
+  position: fixed; 
+  top: 0;
+  left: 0;
+  height: 3.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #001032;; 
+  z-index: 100;
+  color: #3486c9;
+}
+a {
+  text-decoration: none;
+  color: #3486c9;
+}
+a:hover {
+  color: orangered; 
+  transition: color 0.3s ease; 
+}
+
+
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #c4d9ee;
+}
+
+.card5 {
+    width: 270px;
+    height: 270px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+    margin: 20px;
+  }
+  
+  .card5:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #FF802B;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .card5:hover:before {
+    opacity: 1;
+  }
+  
+  .card5-content {
+    width: 170px;
+    height: 200px;
+    padding: 0 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    text-align: center;
+    color: rgb(0, 0, 0);
+    z-index: 1;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
+
+
+  
+  
+  .card5-content span {
+    font-size: 1.7rem;
+    font-weight: 700;
+  }
+  
+  .card5:hover .card5-content {
+    transform: translate(-50%, -50%);
+  }
+  
+  .style
+  {
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+  }
+  .types
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin : 20px;
+  }
+
+
+
+
+
+
+
+
+
+
+  .cards-list {
+    z-index: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    margin: 30px 30px;
+    width: 300px;
+    height: 300px;
+    border-radius: 40px;
+  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  
+  .card .card_image {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+  }
+  
+  .card .card_image img {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+    object-fit: cover;
+  }
+  
+  .card .card_title {
+    text-align: center;
+    border-radius: 0px 0px 40px 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: -80px;
+    height: 40px;
+    color: orangered;
+  }
+  
+  .card:hover {
+    transform: scale(0.9, 0.9);
+    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+      -5px -5px 30px 15px rgba(0,0,0,0.22);
+  }
+  
+  .title-white {
+    color: orange;
+  }
+  
+  .title-black {
+    color: orange;
+  }
+  
+  @media all and (max-width: 500px) {
+    .card-list {
+     
+      flex-direction: column;
+    }
+  }
+  
+
+
+
+
+ 
+.container {
+  display: flex;
+ 
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+  padding: 10px;
+  gap: 10px;
+  scroll-padding: 10px;
+  width: 1500px;
+  height: 254px;
+  background-color: white;
+  border: 2px solid coral;
+}
+
+.container .item {
+  scroll-snap-align: start;
+  flex: 0 0 20%;
+  background: linear-gradient(120deg, coral 30%, rgb(255, 187, 163) 88%, rgb(255, 185, 160) 
+  40%, coral 48%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: bisque;
+  text-align: center;
+  font-size: 1.3rem;
+  line-height: 1.3em;
+  font-weight: 400;
+  font-family: sans-serif;
+  border-radius: .2rem;
+}
+
+
+.icon
+{
+  width: 80px;
+  height: 80px;
+}
+.style-name
+{
+  font-size: large;
+}
+.card5 a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: inherit; 
+  position: absolute; 
+  top: 0;
+  left: 0;
+  z-index: 2; 
+}
+
+
+  
+  /*
+  .card {
+    margin: 30px auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 40px;
+    background-image: url('https://i.redd.it/b3esnz5ra34y.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+    transition: 0.4s;
+  }
+  */
